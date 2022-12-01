@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "rest_framework_simplejwt",
     "rest_framework",
+    "drf_spectacular",
     "uploader",
     "core",
 ]
@@ -65,7 +66,13 @@ REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
         "rest_framework_simplejwt.authentication.JWTAuthentication",
     ), 
-    
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+}
+
+SPECTACULAR_SETTINGS = {
+    "TITLE": "Livraria API",
+    "DESCRIPTION": "API para gerenciamento de livraria, incluindo endpoints e documentação.",
+    "VERSION": "1.0.0",
 }
 
 MIDDLEWARE = [
