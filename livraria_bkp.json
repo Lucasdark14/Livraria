@@ -451,6 +451,78 @@
   }
 },
 {
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add document",
+    "content_type": 11,
+    "codename": "add_document"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change document",
+    "content_type": 11,
+    "codename": "change_document"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete document",
+    "content_type": 11,
+    "codename": "delete_document"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view document",
+    "content_type": 11,
+    "codename": "view_document"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add image",
+    "content_type": 12,
+    "codename": "add_image"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change image",
+    "content_type": 12,
+    "codename": "change_image"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete image",
+    "content_type": 12,
+    "codename": "delete_image"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view image",
+    "content_type": 12,
+    "codename": "view_image"
+  }
+},
+{
   "model": "auth.group",
   "pk": 2,
   "fields": {
@@ -541,6 +613,24 @@
   }
 },
 {
+  "model": "auth.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$p519f4gz1shFRemdYJsjW3$wvuvo/5UkfpwmrCUWhJcpWvtV63hpyGZojKMbLpwikI=",
+    "last_login": "2022-12-01T14:10:23.255Z",
+    "is_superuser": true,
+    "username": "juan",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-12-01T14:09:54.221Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
   "model": "contenttypes.contenttype",
   "pk": 1,
   "fields": {
@@ -621,6 +711,22 @@
   }
 },
 {
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "uploader",
+    "model": "document"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "uploader",
+    "model": "image"
+  }
+},
+{
   "model": "sessions.session",
   "pk": "4rrfbmxcnephkffmi7g4n0qqgt1zcxwa",
   "fields": {
@@ -634,6 +740,14 @@
   "fields": {
     "session_data": ".eJxVjDsOwjAQBe_iGln-21DScwZrvbvgALKlOKkQd4dIKaB9M_NeIsO61LwOnvNE4iS0OPxuBfDBbQN0h3brEntb5qnITZE7HfLSiZ_n3f07qDDqt3aWiT0774pDEwpHlUhFQp8QSgyECazT2hzZovMhXJU1qG0JSMDsxfsD8eM4Vw:1ovhT0:E7z_6v6-NI9sGrkUjFcP7ipcKipoGrfTogMo0qf-abc",
     "expire_date": "2022-12-01T16:10:18.177Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "tpn5m6id1im99nnv6kp1eijnr353eg89",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hBAoIxL9z0DGWBGqoYmpV0Z765NutDtf-_9l4i4rTVunZY4FXERTpx-t4T5QW0H5Y7tNss8t3WZktwVedAux7nQ83q4fwcVe_3WkIKis3VKaVCkAxkwyQHbzIOnoGHwYNCCyt5k1kp7x8k6DhbQM6N4fwC6MDct:1p0kGd:iOOaEWuIYzmsPAYj64gQCzE_AFxf6dVi4UTQiI-Tj0k",
+    "expire_date": "2022-12-15T14:10:23.314Z"
   }
 }
 ]
